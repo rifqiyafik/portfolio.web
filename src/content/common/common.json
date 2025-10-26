@@ -1,0 +1,30 @@
+{
+    "name": "Rifqi Yafik",
+    "logoType": {
+        "mobile": "HP",
+        "desktop": "Rifqi Yafik"
+    },
+    "mainPicture": "/assets/HP.webp",
+    "mainPictureJPG": "/assets/HP.jpeg",
+    "pronunciation": "/rif-ki ya-fik/",
+    "audioFile": "/assets/name-pro2.mp3",
+    "cssVarPrefix": "hp",
+    "email": "rifqiyafika50@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/rifqiyafik/",
+    "github": "https://github.com/rifqiyafik",
+    "resume": "https://docs.google.com/viewer?url=https://docs.google.com/document/d/1s3G7PiPHlK3Ett_W-WUU01GQnsggiLrWZB3IiMAgBEk/export?format=pdf",
+    "socials": [
+        {
+            "type": "linkedin",
+            "link": "https://www.linkedin.com/in/rifqiyafik/"
+        },
+        {
+            "type": "github",
+            "link": "https://github.com/rifqiyafik"
+        },
+        {
+            "type": "mail",
+            "link": "mailto:rifqiyafika50@gmail.com"
+        }
+    ]
+}
