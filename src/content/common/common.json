@@ -1,11 +1,11 @@
 {
     "name": "Rifqi Yafik",
     "logoType": {
-        "mobile": "HP",
+        "mobile": "RY",
         "desktop": "Rifqi Yafik"
     },
-    "mainPicture": "/assets/HP.webp",
-    "mainPictureJPG": "/assets/HP.jpeg",
+    "mainPicture": "/assets/RY.webp",
+    "mainPictureJPG": "/assets/RY.jpeg",
     "pronunciation": "/rif-ki ya-fik/",
     "audioFile": "/assets/name-pro2.mp3",
     "cssVarPrefix": "hp",
