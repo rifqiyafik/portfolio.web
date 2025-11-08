@@ -1,28 +1,27 @@
 [
     {
-        "id": "featured-project-trackcta",
-        "title": "trackCTA",
-        "year": "Dec 2021 - Present",
-        "location": "Chicago",
-        "demo": "https://www.trackcta.com/",
-        "github": "https://github.com/hrishikeshpaul/trackcta",
-        "tags": ["React", "TypeScript", "NodeJS", "Web Sockets", "i18n", "Google Maps", "GCP", "CI/CD", "Shell"],
-        "description": "An internationalized web app to track and predict Chicago Transit Authority (CTA) busses and trains.",
-        "image": "/assets/featured-projects/trackcta.webp",
-        "jpg": "/assets/featured-projects/trackcta.jpeg"
+        "id": "featured-project-ptpn4",
+        "title": "InternTrack",
+        "year": "Feb 2024 - Jun 2024",
+        "location": "PT. Perkebunan Nusantara IV (Regional I)",
+        "demo": "https://intern-track.ptpn4.com/",
+        "github": "https://github.com/RifqiYafik/laravel-ptpn4-medan",
+        "tags": ["Laravel", "PHP", "MySQL", "JavaScript"],
+        "description": "A dedicated web application designed to centralize and manage all data related to internship students at the company.",
+        "image": "/assets/featured-projects/interntrack.webp",
+        "jpg": "/assets/featured-projects/interntrack.jpeg"
     },
     {
-        "id": "featured-project-asctb-reporter",
-        "title": "ASCT+B Reporter",
-        "year": "Jun 2020 - Jun 2021",
-        "location": "Indiana University",
-        "demo": "https://hubmapconsortium.github.io/ccf-asct-reporter/",
-        "github": "https://github.com/hrishikeshpaul/ccf-asct-reporter",
-        "tags": ["Angular 11", "TypeScript", "NodeJS", "NGXS", "Vega", "TravisCI", "Open Source"],
-        "description": "A collaboration with the NIH to build visualization tool to envision large biomedical datasets for researchers, doctors and experts.",
-        "readMore": "https://hrishikeshpaul.medium.com/asct-b-reporter-a-visualization-tool-d4dd29de97d8",
-        "image": "/assets/featured-projects/asctb.webp",
-        "jpg": "/assets/featured-projects/asctb.jpeg"
+        "id": "featured-project-simrs",
+        "title": "SIMRS/HMIS",
+        "year": "Jan 2024 - Dec 2024",
+        "location": "Aceh, Indonesia",
+        "demo": "https://SIMRS.jeumpa.com/",
+        "github": "https://github.com/rifqiyafik/Jeumpa_Project",
+        "tags": ["CodeIgniter 3", "PHP", "MySQL", "Figma", "NAS Synology"],
+        "description": "An integrated Hospital Management Information System, managing core administrative and financial modules, including Accounting, Finance, Cashier, HRD, and Warehouse.",
+        "image": "/assets/featured-projects/simrs.webp",
+        "jpg": "/assets/featured-projects/simrs.jpeg"
     },
     {
         "id": "featured-project-scrapbook",

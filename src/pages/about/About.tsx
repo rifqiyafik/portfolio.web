@@ -1,5 +1,4 @@
 import { FC } from "react";
-
 import { Box, Flex, Heading, Text, Image, Button, IconButton } from "@chakra-ui/react";
 
 import { configs, Content, MarkdownFile, useContent } from "shared/content/Content";
@@ -12,8 +11,13 @@ import { VolumeIcon } from "utils/Icons";
 export const About: FC = () => {
     const content = useContent(MarkdownFile.About);
 
+    const webpSrc = `${process.env.PUBLIC_URL}${configs.common.mainPicture}`;
+    const jpgSrc = `${process.env.PUBLIC_URL}${configs.common.mainPictureJPG}`;
+
+    const audioSrc = `${process.env.PUBLIC_URL}${configs.common.audioFile}`;
+
     const onPlay = () => {
-        const audio = new Audio(configs.common.audioFile);
+        const audio = new Audio(audioSrc);
         audio.play();
     };
 
@@ -22,9 +26,9 @@ export const About: FC = () => {
             <Flex pt="8" gap={{ base: 6, md: 6, lg: 12 }} direction={{ base: "column", md: "row" }}>
                 <Box flex="0.35" data-aos="fade-up">
                     <picture>
-                        <source type="image/webp" srcSet={configs.common.mainPicture}></source>
-                        <source type="image/jpeg" srcSet={configs.common.mainPictureJPG}></source>
-                        <Image borderRadius="xl" src={configs.common.mainPicture} w="100%" alt="profile image" />
+                        <source type="image/webp" srcSet={webpSrc}></source>
+                        <source type="image/jpeg" srcSet={jpgSrc}></source>
+                        <Image borderRadius="xl" src={jpgSrc} w="100%" alt="profile image" />
                     </picture>
                 </Box>
                 <Box flex="0.85">

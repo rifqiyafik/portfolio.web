@@ -1,15 +1,14 @@
 [
     {
-        "id": "other-project-post",
-        "title": "Part of Speech Tagger",
-        "year": "Aug 2019 - Dec 2019",
+        "id": "other-project-happycat",
+        "title": "Happy Cat",
+        "year": "Sept 2023 - Okt 2023",
         "github": "https://github.com/hrishikeshpaul/post",
         "demo": "https://hrishikeshpaul.github.io/post/",
         "tags": ["Python", "Vue", "Flask", "Artificial Intelligence", "Language Processing"],
         "description": "Post is a simple algorithm that was developed to tag a word in a sentence corresponding to its part of speech. The algorithm makes of a probabilistic approach along with some randomness, together which forms the basis of an algorithm called Gibbs Sampling.",
-        "image": "/assets/other-projects/post.webp",
-        "jpg": "/assets/other-projects/post.jpeg"
-
+        "image": "/assets/other-projects/happycat.webp",
+        "jpg": "/assets/other-projects/happycat.jpeg"
     },
     {
         "id": "other-project-noq",
@@ -54,7 +53,7 @@
     },
     {
         "id": "other-project-nutricare",
-        "title": "Nutricare",
+        "title": "Emo Micro Vista",
         "tags": ["AngularJS", "JavaScript", "Express", "NodeJS", "Leaflet", "Heroku", "Python", "Pandas"],
         "description": "A web app for patients to input nutrient intake data and researchers to analyse the data with the help of graphs and tables. A researcher can conduct studies on N different subjects for a particular problem statement.",
         "readMore": "https://angel.co/projects/576300-nutricare",

@@ -40,21 +40,7 @@ export const Footer: FC = () => {
                 justifyContent={{ base: "center", md: "space-between" }}
                 direction={{ base: "column", md: "row" }}
             >
-                <Text>
-                    This site is hand-crafted, with care by{" "}
-                    <Text
-                        as="a"
-                        href="https://github.com/hrishikeshpaul"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        color="primary.500"
-                        _hover={{ textDecoration: "underline" }}
-                        cursor="pointer"
-                    >
-                        Hrishikesh Paul
-                    </Text>{" "}
-                    and modified by me.
-                </Text>
+                <Text>This site is hand-crafted, with care by me.</Text>
                 {/* <Text>This site is hand-crafted, with care by Hrishikesh Paul and modify by me.</Text> */}
                 <Text>&copy; {new Date().getFullYear()} All rights reserved.</Text>
             </Flex>

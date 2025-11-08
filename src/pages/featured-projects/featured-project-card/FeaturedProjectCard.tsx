@@ -1,5 +1,4 @@
 import { FC } from "react";
-
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { Tags } from "shared/tags/Tags";
 import { ProjectCardFooter } from "shared/project-card-footer/ProjectCardFooter";
@@ -8,6 +7,7 @@ export enum ImagePosition {
     Right,
     Left,
 }
+
 interface Props {
     id: string;
     title: string;
@@ -52,11 +52,14 @@ export const FeaturedProjectCard: FC<Props> = ({
     year,
     jpg,
 }) => {
+    const webpSrc = `${process.env.PUBLIC_URL}${image}`;
+    const jpgSrc = `${process.env.PUBLIC_URL}${jpg}`;
+
     return (
         <Flex
             justifyContent="space-between"
             id="featured-project-card"
-            py={{ base: "12", md: "12", lg: '28' }}
+            py={{ base: "12", md: "12", lg: "28" }}
             direction={{ base: "column-reverse", lg: ImagePositionLayoutMapper[imagePosition] }}
         >
             <Flex
@@ -90,7 +93,7 @@ export const FeaturedProjectCard: FC<Props> = ({
                         data-aos-offset="200"
                         data-aos-delay="200"
                     >
-                        <Image borderRadius="xl" src={image} />
+                        <Image borderRadius="xl" src={jpgSrc} />
                     </Box>
 
                     <Text
@@ -120,11 +123,11 @@ export const FeaturedProjectCard: FC<Props> = ({
                 pr={{ base: "0", lg: ImagePositionPaddingLeftMapper[imagePosition] }}
             >
                 <picture>
-                    <source type="image/webp" srcSet={image}></source>
-                    <source type="image/jpeg" srcSet={jpg}></source>
+                    <source type="image/webp" srcSet={webpSrc}></source>
+                    <source type="image/jpeg" srcSet={jpgSrc}></source>
                     <Image
                         borderRadius="xl"
-                        src={jpg}
+                        src={jpgSrc}
                         alt={`${title}-cover-image`}
                         transition="all 0.4s ease-in-out"
                         _hover={{ boxShadow: "0px 20px 60px rgb(77 77 77 / 10%)", transform: "scale(1.01)" }}

@@ -1,5 +1,4 @@
 import { FC } from "react";
-
 import { Center, Container, Heading, Image, HStack, Stack, Flex, Box, IconButton, Button } from "@chakra-ui/react";
 
 import { Content, configs, useContent, MarkdownFile } from "shared/content/Content";
@@ -12,17 +11,19 @@ export const Landing: FC = () => {
 
     const scrollIntoView = () => {
         const featuredHeader = document.getElementById(WorkPageId);
-
         if (featuredHeader) {
             featuredHeader.scrollIntoView({ behavior: "smooth" });
         }
     };
 
+    const webpSrc = `${process.env.PUBLIC_URL}/${configs.landing.picture}`;
+    const jpgSrc = `${process.env.PUBLIC_URL}/${configs.landing.jpg}`;
+
     return (
         <Box id="page-landing">
             <Center pb={{ base: 16, md: 32 }}>
                 <HStack spacing="16" justifyContent="space-between" alignItems="flex-start">
-                    <Stack flex={{ base: "1", lg: "0.6" }} spacing="16">
+                    <Stack flex={{ base: "1", lg: "0.6" }} spacing="12">
                         <Stack spacing="8">
                             <Heading
                                 fontSize={{ base: "5xl", md: "7xl" }}
@@ -37,9 +38,9 @@ export const Landing: FC = () => {
                                 {content.landing}
                             </Content>
                         </Stack>
-
                         <Socials delay={1000} />
                     </Stack>
+
                     <Container
                         alignItems="center"
                         flex="0.4"
@@ -48,13 +49,14 @@ export const Landing: FC = () => {
                         data-aos-delay="400"
                     >
                         <picture>
-                            <source type="image/webp" src={configs.landing.picture}></source>
-                            <source type="image/jpeg" src={configs.landing.jpg}></source>
-                            <Image borderRadius="xl" src={configs.landing.jpg} alt={`face-cover-image`} />
+                            <source type="image/webp" src={webpSrc} />
+                            <source type="image/jpeg" src={jpgSrc} />
+                            <Image borderRadius="xl" src={jpgSrc} alt="face-cover-image" />
                         </picture>
                     </Container>
                 </HStack>
             </Center>
+
             <Flex justifyContent="center" data-aos="fade" data-aos-delay="1400">
                 <Button
                     as={IconButton}
@@ -63,7 +65,7 @@ export const Landing: FC = () => {
                     aria-label="down arrow button"
                     icon={<ChevronDownIcon />}
                     onClick={scrollIntoView}
-                ></Button>
+                />
             </Flex>
         </Box>
     );
